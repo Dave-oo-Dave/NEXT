@@ -1,0 +1,144 @@
+@font-face {
+    font-family: 'ClashDisplay-Medium';
+    src: url(Fonts/ClashDisplay_Complete/Fonts/OTF/ClashDisplay-Medium.otf);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Navigation */
+nav{
+    float: right;
+    margin: 0;
+    overflow:hidden;
+    text-align: center;
+    position: fixed;
+    z-index: 100;
+    width: 145%;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.050);
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav > ul > li > a{
+    color: white;
+    display: block;
+    line-height: 2em;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    font-family: 'ClashDisplay-Medium';
+    text-transform: uppercase;
+    font-size: 16px;
+    position: relative;
+}
+
+nav ul li a::after {
+  content:"";
+  width: 0%;
+  height: 10px;
+  background-image: url(https://www.beyondcss.dev/underline.svg);
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
+  left:0;
+  transition: 0.5s ease-in-out;
+  display: block;
+}
+
+nav ul li a:hover::after {
+  height: 10px; 
+  width: 100%;
+  display: block;
+}
+
+/* .curvyline {
+  background-color: red;
+  height: 4px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  z-index: 100;
+} */
+
+/* nav ul li a:hover {
+    background-color: red;
+    height: 4px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    z-index: -1;
+    animation: expand 0.3s ease-out forwards;
+}
+
+@keyframes expand {
+  0% {
+    left: 0;
+    width: 0;
+  }
+  50% {
+    left: 0;
+    width: 100%;
+  }
+  100% {
+    left: 100%;
+    width: 0;
+  }
+} */
+
+.logo{
+    height: 86vh;
+    width: 600px;
+    transform-origin: top left;
+    position: fixed;
+     z-index: 10;
+}
+.logo img {
+  /* position: absolute; */
+  max-height: 700px;
+  min-height: 140px;
+  left: 0;
+}
+
+video,
+.container {
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    height: 1000px;
+    margin: 0;
+    padding: 0;
+    background-color: yellow;
+    width: 100vw;
+}
+.backvideo{
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
